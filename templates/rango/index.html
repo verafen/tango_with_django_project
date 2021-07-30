@@ -7,12 +7,11 @@
 
 {% block body_block %}
 <h1>Rango says...</h1>
-<p>Visits: {{ visits }}</p>
 <div>
-   {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
         howdy {{ user.username }}!
     {% else %}
-    hey there partner!
+        hey there partner!
     {% endif %}
     <br />
     <strong>{{ boldmessage }}</strong><br />
@@ -27,7 +26,7 @@
     {% endfor %}
     </ul>
 {% else %}
-    <strong>There are no categories resent.</strong>
+    <strong>There are no categories present.</strong>
 {% endif %}
 </div>
 
